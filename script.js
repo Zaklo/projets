@@ -13,7 +13,8 @@ function init(){
 
   // si WebGL ne fonctionne pas sur votre navigateur vous pouvez utiliser le moteur de rendu Canvas à la place
   // renderer = new THREE.CanvasRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( window.innerWidth * 0.7, window.innerHeight *0.8 );
+  console.log(window.innerWidth);
   document.getElementById('container').appendChild(renderer.domElement);
 
   // on initialise la scène
@@ -30,10 +31,10 @@ function init(){
   scene.add( mesh );
 
 
-
+scene.background
   for(let i=0; i<14; i++) {
-    geometry = new THREE.CubeGeometry( getRandomArbitrary(100, 1000), getRandomArbitrary(100,1000), getRandomArbitrary(100, 1000) );
-    material = new THREE.MeshBasicMaterial( { color: 'blue', wireframe: true } );
+    geometry = new THREE.CubeGeometry( getRandomArbitrary(100, 1000), getRandomArbitrary(100,1500), getRandomArbitrary(100, 1000) );
+    material = new THREE.MeshBasicMaterial( { color: '#07485C', wireframe: true } );
     mesh[i] = new THREE.Mesh( geometry, material );
     scene.add( mesh[i]);
   }
@@ -54,5 +55,7 @@ function animate(){
 
 
   // on effectue le rendu de la scène
+  renderer.setClearColor( '#F9C0AD', 1);
   renderer.render( scene, camera );
+
 }
