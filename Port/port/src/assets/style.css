@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Joane Black";
+    src: url("fonts/Joane/Joane Black.otf");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/Futura/Futura.ttf");
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Joane Black";
+}
+
+
+h2 {
+    font-family: "Futura";
+}
+
+h3{
+    font-family: "Joane Black";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1000px;
+    padding-top: 20px;
+}
+
+.ml12, .ml13, .ml14 {
+    font-weight: 200;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.ml12 .letter, .ml13 .letter, .ml14 .letter {
+    display: inline-block;
+}
+
+.ml16, .ml17, .ml18 {
+    padding: 0;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    overflow: hidden;
+}
+
+.ml16 .letter, .ml17 .letter, .ml18 .letter {
+    display: inline-block;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    bottom: 0;
+    margin-top: 10%;
+}
+
+.red {
+    height: 70px;
+    width: 500px;
+    background-color: #cf1212;
+    opacity: 0.8;
+    transform: rotate(45deg);
+    margin-top: 20%;
+    margin-left: 50%;
+    position: absolute;
+}
+
+a{
+    color: black;
+}
+
+#works{
+    display: none;
+
+}
+
+#contact{
+    display: none;
+}
+
+#about{
+    display: none;
+}
+
+
+
+.home-return{
+    font-family: "Futura";
+    writing-mode: vertical-lr;
+}
+
+#home{
+    top: 0;
+}

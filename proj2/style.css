@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html{
+  overflow: hidden;
+  background-color: #F4857F;
+  height: 100%;
+}
+
+canvas{
+  border:#F4857F solid 80px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
